@@ -1,8 +1,5 @@
-using MoreMountains.Tools;
-using Sirenix.Utilities;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Windows;
 
 namespace ProjectVS
 {
@@ -42,13 +39,8 @@ namespace ProjectVS
                 return currentSpeed;
             }
         }
-        public float MaxSpeed
-        {
-            get
-            {
-                return Speed * SprintMulty;
-            }
-        }
+        public float MaxSpeed { get { return Speed * SprintMulty; } }
+
         [field: SerializeField]
         public float SprintMulty { get; protected set; }
 
