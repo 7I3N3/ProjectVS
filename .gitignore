@@ -81,3 +81,4 @@ crashlytics-build.properties
 /[Aa]ssets/Plugins*
 /[Aa]ssets/Universal Sound FX*
 /[Aa]ssets/Resources/DOTweenSettings.asset*
+/[Pp]ackages/com.singularitygroup.hotreload**
