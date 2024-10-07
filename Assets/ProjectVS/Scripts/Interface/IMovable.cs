@@ -5,7 +5,7 @@ namespace ProjectVS
 {
     public interface IMovable
     {
-        public float Speed { get; }
+        public float MovementSpeed { get; }
         public Vector3 MoveVector { get; }
 
         public bool IsMoving { get; }
@@ -13,7 +13,7 @@ namespace ProjectVS
         public UnityEvent<Vector3> MoveStartedEvent { get; }
         public UnityEvent<Vector3> MoveFinishedEvent { get; }
 
-        public void OnMove(Vector3 target);
+        public void Move(Vector3 target);
     }
 }
 

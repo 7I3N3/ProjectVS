@@ -16,7 +16,7 @@ namespace ProjectVS
         public UnityEvent<IDamageable> DeadStartedEvent { get; }
         public UnityEvent<IDamageable> DeadFinishedEvent { get; }
 
-        public void OnHit(IDamageable damager);
-        public void OnDead(IDamageable damager);
+        public void Hit(IDamageable damager);
+        public void Dead(IDamageable damager);
     }
 }

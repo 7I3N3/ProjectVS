@@ -6,17 +6,16 @@ namespace ProjectVS
 {
     public interface IDamageable
     {
-        public float Damage { get; }
+        public float DamageValue { get; }
         public float FixedPenetration { get; }
         public float PercentPenetration { get; }
-        public float Delay { get; }
-        public float Interval { get; }
+        public float DamageDelay { get; }
         public int TargetCount { get; }
 
         public UnityEvent<List<IHittable>> DamageStartedEvent { get; }
         public UnityEvent<List<IHittable>> DamageFinishedEvent { get; }
 
-        public void OnDamage(List<IHittable> hitList);
+        public void Damage(List<IHittable> targetList);
     }
 }
 
